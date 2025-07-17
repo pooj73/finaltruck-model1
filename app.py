@@ -1361,6 +1361,7 @@ def trip_statistics_dashboard():
             uploaded_trip_stats_file = upload_path
             return redirect(url_for('trip_statistics_dashboard'))
 
+
     df = load_trip_statistics(file_path)
 
     days = list(range(1, 32))
